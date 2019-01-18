@@ -51,5 +51,12 @@ $f3->route('GET /@animal', function($f3, $params) {
     echo"<h1>$noise!</h1>";
 });
 
+//Define a form1 route
+$f3->route('GET /order', function() {
+    $view = new View();
+    echo $view->render('views/form1.html');
+});
+
+
 //Run fat free
 $f3->run();
