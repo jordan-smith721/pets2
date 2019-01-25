@@ -72,6 +72,5 @@ $f3->route('POST /results', function() {
     echo $template->render('views/results.html');
 });
 
-
 //Run fat free
 $f3->run();
